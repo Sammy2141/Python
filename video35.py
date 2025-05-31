@@ -33,3 +33,19 @@ def compare_to_x(x):
 print(compare_to_x(250))
 print(compare_to_x(150))
 print(compare_to_x(50))
+# Keep the first two conditions of the code from the previous exercise (if x > 200, print out "Big"; If x > 100 and x <= 200, print out "Average").
+# Add a new elif statement, so that, eventually, the program prints "Small" if x >= 0 and x <= 100, and "Negative" if x < 0.
+def compare_to_x(x):
+    if x > 200:
+        return "Big"
+    elif x > 100 and x <= 200:
+        return "Average"
+    elif x >= 0 and x <= 100:
+        return "Small"
+    else:
+        return "Negative"
+print(compare_to_x(250))
+print(compare_to_x(150))
+print(compare_to_x(50))
+print(compare_to_x(-50))
+print(compare_to_x(0))
